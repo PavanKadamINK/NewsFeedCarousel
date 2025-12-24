@@ -4,10 +4,9 @@
           displayBlock="true"
           controllerName="com.winslow.yve.newsfeed.Card">
 
-    <Carousel id="carouselSample" 			
-					loop="true">                  
-					<customLayout>
-						<CarouselLayout visiblePagesCount="3" />
-					</customLayout>
-	</Carousel>
+      <Carousel id="carouselSample" loop="true" showPageIndicator="false">                  
+            <customLayout>
+                  <CarouselLayout visiblePagesCount="3" />
+            </customLayout>
+      </Carousel>
 </mvc:View>
