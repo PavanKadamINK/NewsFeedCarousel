@@ -8,6 +8,7 @@ sap.ui.define([
 
 	return Controller.extend("com.winslow.yve.newsfeed.Card", {
 		onInit: function () {
+			var that = this;
 			var cardId = "com.winslow.yve.newsfeed";
 			cardId = cardId.replace(/\./g, '/');
 			var oImgModel = new JSONModel({
@@ -34,9 +35,15 @@ sap.ui.define([
 					src: "{images>/Image_" + i + "}",
 					alt: "Example picture " + iImageNumber,
 					densityAware: false,
-					decorative: false
+					decorative: false,
+					active: true, // 🔹 required for press
+					press: this.onImagePress.bind(that)
 				}));
 			}
+		},
+		onImagePress: function () {
+			window.open("https://news.winslow.com.au/", "_blank");
 		}
+
 	});
 });
