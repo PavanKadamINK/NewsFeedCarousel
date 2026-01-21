@@ -42,7 +42,8 @@ sap.ui.define([
 			}
 		},
 		onImagePress: function () {
-			window.open("https://news.winslow.com.au/", "_blank");
+			// window.open("https://news.winslow.com.au/", "_blank");
+			sap.m.URLHelper.redirect("https://news.winslow.com.au/", true);
 		}
 
 	});
