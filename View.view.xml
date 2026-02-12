@@ -4,7 +4,7 @@
           displayBlock="true"
           controllerName="com.winslow.yve.newsfeed.Card">
 
-      <Carousel id="carouselSample" loop="true" showPageIndicator="false">                  
+      <Carousel id="carouselSample" loop="false" showPageIndicator="false">                  
             <customLayout>
                   <CarouselLayout visiblePagesCount="3" />
             </customLayout>
